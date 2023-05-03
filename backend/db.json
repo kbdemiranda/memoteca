@@ -1,0 +1,34 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Que bom que vc veio",
+      "autoria": "Nay",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Estudando Angular",
+      "autoria": "Dev Alura",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Angular é o melhor'",
+      "autoria": "Dev Alura",
+      "modelo": "modelo3"
+    },
+    {
+      "conteudo": "Think Differente",
+      "autoria": "Steve Jobs",
+      "modelo": "modelo3",
+      "id": 4
+    },
+    {
+      "conteudo": "Amanhã é um novo dia",
+      "autoria": "Desconhecida",
+      "modelo": "modelo2",
+      "id": 5
+    }
+  ]
+}

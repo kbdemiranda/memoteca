@@ -1,4 +1,4 @@
-<section class="container criar-pensamentos ff-inter">
+<section class="container editar-pensamentos ff-inter">
   <header class="header">
     <h2>Adicione um <br>pensamento novo:</h2>
   </header>
@@ -21,7 +21,7 @@
       placeholder="Digite a autoria ou fonte"
       [(ngModel)]="pensamento.autoria"
     >
-    <label for="modelo1">Selecione o modelo do card:</label>
+    <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
       <div class="radio-modelo">
         <label for="modelo1">
@@ -90,7 +90,7 @@
       </div>
     </div>
     <div class="acoes">
-      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button (click)="editarPensamento()" class="botao">Salvar</button>
       <button (click)="cancelar()" class="botao">Cancelar</button>
     </div>
   </form>
