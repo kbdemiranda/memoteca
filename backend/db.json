@@ -4,60 +4,70 @@
       "id": 1,
       "conteudo": "Que bom que vc veio",
       "autoria": "Nay",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": true
     },
     {
       "id": 2,
       "conteudo": "Estudando Angular",
       "autoria": "Dev Alura",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "Angular é o melhor'",
       "autoria": "Dev Alura",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "conteudo": "Think Differente",
       "autoria": "Steve Jobs",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Amanhã é um novo dia",
       "autoria": "Desconhecida",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 5
     },
     {
       "conteudo": "A vingança nunca é plena, mata a alma e envenena.",
       "autoria": "Seu Madruga",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 6
     },
     {
       "conteudo": "O destino raramente nos chama no momento de nossa escolha.",
       "autoria": "Optimus Prime",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 7
     },
     {
       "conteudo": "Ás vezes justiça não tem nada a ver com tomar a decisão fácil,ás vezes é encontrar o lado bom das pessoas e tentar salva-las de si",
       "autoria": "Clark Kent",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 8
     },
     {
       "conteudo": "As vezes é preciso aprender a correr antes de começar a andar.",
       "autoria": "Tony Stark",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 9
     },
     {
       "conteudo": "Com grandes poderes, vem grandes responsabilidades.",
       "autoria": "Ben Parker",
       "modelo": "modelo1",
+      "favorito": true,
       "id": 10
     }
   ]

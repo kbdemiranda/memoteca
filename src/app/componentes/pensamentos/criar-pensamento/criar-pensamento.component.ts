@@ -14,7 +14,8 @@ export class CriarPensamentoComponent implements OnInit {
   pensamento: Pensamento = {
     conteudo: '',
     autoria: '',
-    modelo: 'modelo1'
+    modelo: 'modelo1',
+  favorito: false
   }
 
   formulario! : FormGroup;
