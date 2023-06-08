@@ -12,12 +12,17 @@ export class PensamentoService {
 
   constructor(private httpClient:  HttpClient) { }
 
-  lista(pagina: number): Observable<Pensamento[]>{
+  lista(pagina: number, filtro: string): Observable<Pensamento[]>{
     const itemsPorPagina: number  = 6;
 
     let httpParams = new HttpParams()
       .set("_page", pagina)
       .set("_limit", itemsPorPagina)
+
+    if (filtro.trim().length > 2){
+      httpParams = httpParams
+                  .set('q', filtro);
+    }
 
     /* Retorno possível, porem não recomendado:
     * return this.httpClient.get<Pensamento[]>(`${this.API}?_page=${pagina}&_limit=${itemsPorPagina}`) */
