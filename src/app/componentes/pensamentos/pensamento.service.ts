@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {Pensamento} from "./Pensamento";
 import {Observable} from "rxjs";
 
@@ -12,8 +12,19 @@ export class PensamentoService {
 
   constructor(private httpClient:  HttpClient) { }
 
-  lista(): Observable<Pensamento[]>{
-    return this.httpClient.get<Pensamento[]>(this.API)
+  lista(pagina: number): Observable<Pensamento[]>{
+    const itemsPorPagina: number  = 6;
+
+    let httpParams = new HttpParams()
+      .set("_page", pagina)
+      .set("_limit", itemsPorPagina)
+
+    /* Retorno possível, porem não recomendado:
+    * return this.httpClient.get<Pensamento[]>(`${this.API}?_page=${pagina}&_limit=${itemsPorPagina}`) */
+
+    /* No TypeScript quando a variavel tem o mesmo nome do tipo, pode ser omitido, no exemplo a seguir
+    * nossa variavel httpParams, poderia se chamar apenas params e não precisaria declarar o : params */
+    return this.httpClient.get<Pensamento[]>(this.API, { params: httpParams });
   }
 
   criar(pensamento: Pensamento): Observable<Pensamento>{
