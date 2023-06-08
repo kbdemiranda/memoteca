@@ -30,7 +30,7 @@ export class PensamentoComponent implements OnInit {
   }
 
   mudarIconeFavorito(): string{
-    if (this.pensamento.favorito == false){
+    if (!this.pensamento.favorito){
       return 'inativo'
     }else{
       return 'ativo';
