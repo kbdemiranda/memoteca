@@ -12,7 +12,7 @@ export class PensamentoService {
 
   constructor(private httpClient:  HttpClient) { }
 
-  lista(pagina: number, filtro: string): Observable<Pensamento[]>{
+  listar(pagina: number, filtro: string, favoritos: boolean): Observable<Pensamento[]>{
     const itemsPorPagina: number  = 6;
 
     let httpParams = new HttpParams()
@@ -22,6 +22,10 @@ export class PensamentoService {
     if (filtro.trim().length > 2){
       httpParams = httpParams
                   .set('q', filtro);
+    }
+
+    if (favoritos){
+      httpParams = httpParams.set("favorito", true);
     }
 
     /* Retorno possível, porem não recomendado:
